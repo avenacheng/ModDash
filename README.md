@@ -1,8 +1,8 @@
-# Project-Title
+# Reddit Mod Dashboard
 
-One line description.
+Helping moderators ensure safe and civil activity in various communities.
 
-[Link](#) to your presentation.
+[https://docs.google.com/presentation/d/1Q7ybWYtu2dSSOjvPlj5QIxcfPIm90uV9eJfeR9wLb4w/edit?usp=sharing](#) to your presentation.
 
 <hr/>
 
