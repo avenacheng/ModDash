@@ -13,8 +13,7 @@ Helping moderators ensure safe and civil activity in various communities.
 ## Introduction
 
 ## Architecture
-<img 
-src = "https://docs.google.com/drawings/d/1AgGkFoFkb8D2OKhaWbDgvWdejAjqKkG_KNuSGU9jmcQ/edit?usp=sharing">
+https://docs.google.com/drawings/d/1AgGkFoFkb8D2OKhaWbDgvWdejAjqKkG_KNuSGU9jmcQ/edit?usp=sharing
 ## Dataset
 
 ## Engineering challenges
