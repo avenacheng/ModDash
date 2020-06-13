@@ -13,9 +13,10 @@ Helping moderators ensure safe and civil activity in various communities.
 ## Introduction
 
 ## Architecture
-https://github.com/avenacheng/RedditModDashboard/issues/1#issue-638064414
-https://docs.google.com/drawings/d/1AgGkFoFkb8D2OKhaWbDgvWdejAjqKkG_KNuSGU9jmcQ/edit?usp=sharing
+![architecture](https://user-images.githubusercontent.com/27587714/84555849-eb101c80-acd3-11ea-9d49-30afefd7c030.png)
+
 ## Dataset
+Monthly Reddit Comments: https://files.pushshift.io/reddit/comments/
 
 ## Engineering challenges
 
