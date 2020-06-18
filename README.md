@@ -18,7 +18,16 @@ Reddit is a social media platform for people to form communities around their pe
 
 ## Dataset
 Monthly Reddit Comments: https://files.pushshift.io/reddit/comments/
+I used data from 2013 - 2017 stored as bz2 formats.
 
 ## Engineering challenges
+
+**1. Slow processing with JSON**
+
+Spark is able to read directly from bz2. While this makes it convenient to read directly from S3, querying the data takes much longer. Parquet is optimized to read very quickly, which was helpful in my use case in which I only needed to use preprocess some columns. Testing with sample data ~ 115KB:
+
+JSON - 7 minutes
+Parquet - 42 seconds
+
 
 ## Trade-offs
