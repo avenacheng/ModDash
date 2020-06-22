@@ -5,9 +5,6 @@ Keeping subreddits safe.
 [https://docs.google.com/presentation/d/1Q7ybWYtu2dSSOjvPlj5QIxcfPIm90uV9eJfeR9wLb4w/edit?usp=sharing](#)
 <hr/>
 
-## How to install and get it up and running
-
-
 <hr/>
 
 ## Introduction
@@ -28,6 +25,3 @@ Spark is able to read directly from bz2. While this makes it convenient to read 
 
 JSON - 7 minutes
 Parquet - 42 seconds
-
-
-## Trade-offs
