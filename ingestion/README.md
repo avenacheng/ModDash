@@ -1,4 +1,4 @@
-#Ingestion
+# Ingestion
 
 Data was manually collected from pushshift.io by running the follow command:
 
