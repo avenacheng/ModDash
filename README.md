@@ -3,7 +3,6 @@
 Keeping subreddits safe.
 
 [https://docs.google.com/presentation/d/1Q7ybWYtu2dSSOjvPlj5QIxcfPIm90uV9eJfeR9wLb4w/edit?usp=sharing](#)
-<hr/>
 
 <hr/>
 
@@ -21,7 +20,22 @@ I used data from 2013 - 2017 stored as bz2 formats.
 
 **1. Slow processing with JSON**
 
-Spark is able to read directly from bz2. While this makes it convenient to read directly from S3, querying the data takes much longer. Parquet is optimized to read very quickly, which was helpful in my use case in which I only needed to use preprocess some columns. Testing with sample data ~ 115KB:
+Part of the reason Spark processing was slow was reading the data. JSON is known for slow reads and fast writes, but reading in a 5GB file would take ~4 minutes. Thus, I tried exploring other formats such as Parquet, a binary format that is column based and provides very quick reads. I discovered that the read time was 20 seconds! But the conversion from JSON to Parquet was ~25 minutes.
 
-JSON - 7 minutes
-Parquet - 42 seconds
+I discovered that predefining a schema ahead of time would prove to be very effective. Spark will automatically infer the schema of JSON which can take a very long time. However, after explicitly providing the format, I was able to reduce read time to 13 seconds.
+
+**2. Slow queries in PostgreSQL**
+
+Millions and millions of rows....can take forever to query. For my use case, there were only a few queries that users could make based on the post, sentiment, time, and author. After creating BTree Indexes on these columns, I was able to reduce query time from ~5 minutes to a few milliseconds!
+
+*Example Query:*
+
+SELECT post_id, AVG(sentiment), COUNT(comments) 
+
+WHERE year = 2017 AND  month = 1 AND day = 1
+
+GROUP BY post_id
+
+ORDER BY avg_sentiment ASC
+
+LIMIT 5;
