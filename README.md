@@ -12,6 +12,7 @@ Reddit is a social media platform for people to form communities around their pe
 ## Architecture
 ![Avena Cheng_Data Model Diagram (10)](https://user-images.githubusercontent.com/27587714/86549193-cafb0400-bef3-11ea-8698-1b93aea23b4d.png)
 
+
 ## Dataset
 Monthly Reddit Comments: https://files.pushshift.io/reddit/comments/
 I used data from 2013 - 2017 stored as bz2 formats.
@@ -39,3 +40,9 @@ GROUP BY post_id
 ORDER BY avg_sentiment ASC
 
 LIMIT 5;
+
+## User Interface
+
+Click here to see a live demo of ModDash!
+
+https://www.youtube.com/watch?v=bAEKbJ5AG8Q
