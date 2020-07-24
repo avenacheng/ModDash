@@ -2,7 +2,8 @@
 
 Keeping subreddits safe.
 
-[https://docs.google.com/presentation/d/1Q7ybWYtu2dSSOjvPlj5QIxcfPIm90uV9eJfeR9wLb4w/edit?usp=sharing](#)
+https://docs.google.com/presentation/d/1hPPjYOufNtm8X1D7M1d5B-u_5I8a8nfFpsFvCQ6bZAc/edit?usp=sharing
+
 
 <hr/>
 
