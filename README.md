@@ -42,10 +42,4 @@ ORDER BY avg_sentiment ASC
 
 LIMIT 5;
 
-## Live Demo
 
-Click here to see a my 5 minute presentation for ModDash!
-https://www.youtube.com/watch?v=enETt2YqNTg&t=9s
-
-Click here to see just the UI demo:
-https://www.youtube.com/watch?v=bAEKbJ5AG8Q
